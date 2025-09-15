@@ -83,7 +83,7 @@ const reservation = `
                 <div class=" w-full rounded-2xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-white mt-[36px]">
                     <!-- Header -->
                     <div class="text-center px-6 py-4 bg-[#36578A] shadow-[0px_3px_6px_#00000029]">
-                        <h3 class="text-lg font-bold text-[#fff]">Basic</h3>
+                        <h3 class="text-lg font-bold text-[#fff]">Complet</h3>
                         <p class="text-sm text-[#fff]">Votre test psychotechnique tout comprix</p>
                     </div>
 
@@ -150,6 +150,135 @@ const paiement = `
         
             <div class="grid grid-cols-[50%_50%] items-center shadow-[0px_3px_14px_#00000029]">
                 <h1 class="ml-[90px] font-bold text-[20px] font-[Lato] text-[#36578A]">Test psychotechnique pour permis de conduire à Montgeron</h1>
+            </div>
+        </div>
+        <div class="w-full h-full mt-[39px] grid grid-cols-[48%_48%] gap-[4%]">
+            <div id="left" class="flex flex-col ml-[90px] gap-[27px]">
+                 <h1 class="font-bold text-[20px] font-[Lato] text-[#383838]">Confirmer et payer</h1>  
+                 <div class="w-full flex items-center gap-4 rounded-lg  p-4 border border-[#EAEAEA]">
+                    <img src="src/img/ico-trend.png" alt="Trend Icon" class="w-5 h-5" />
+                    <div class="flex flex-col">
+                        <span class="text-sm text-[#000]">Date de réservation en forte demande</span>
+                        <span class="text-sm text-[#000]">Les réservations sont fréquentes pour ce centre</span>
+                    </div>
+                </div>
+                <h1 class="font-bold text-[20px] font-[Lato] text-[#383838]">Vos informations personnelles</h1> 
+                <div class="space-y-2 mt-[-25px] border-b pb-6 border-[#707070]">
+                    <input 
+                        type="text" 
+                        placeholder="Nom Prénom" 
+                        class="w-full h-[42px] p-3 text-[14px] bg-gray-100 rounded-lg border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        class="w-full h-[42px] p-3 text-[14px] bg-gray-100 rounded-lg border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <input 
+                        type="tel" 
+                        placeholder="Numéro de téléphone" 
+                        class="w-full h-[42px] p-3 text-[14px] bg-gray-100 rounded-lg border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                </div>
+                <h1 class="font-bold text-[20px] font-[Lato] text-[#383838]">Votre test psychotechnique</h1>  
+                <div class="space-y-4 mt-[-25px] border-b pb-6 border-[#707070]">
+                    <div class="flex items-center gap-2">
+                        <img src="src/img/ico-date.png" alt="Date Icon" class="w-5 h-5" />
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-[#383838]">Date</span>
+                            <span class="text-sm text-[#707070]">12 mai 2025</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="src/img/ico-clock.png" alt="Time Icon" class="w-5 h-5" />
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-[#383838]">Horaire</span>
+                            <span class="text-sm text-[#707070]">12:30</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="src/img/ico-address.png" alt="Location Icon" class="w-6 h-6" />
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-[#383838]">Adresse</span>
+                            <span class="text-sm text-[#707070]">39 Rue Emile Steiner, 27200 Vernon</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="space-y-6">
+                    <!-- Titre -->
+                    <h1 class="text-lg font-bold text-[#383838]">Choisissez votre moyen de paiement</h1>
+                    <div class="flex items-end gap-1 mt-[-25px]">
+                        <img src="src/img/ico-lock.png" alt="Secure Icon" class="w-4 h-6" />
+                        <span class="text-[10px] text-[#383838]">100% SÉCURISÉ</span>
+                    </div>
+
+                    <!-- Options de paiement -->
+                    <div class="space-y-4">
+                        <label class="flex items-center gap-4 cursor-pointer border-b border-[#E2E2E2] pb-4">
+                            <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" />
+                            <img src="src/img/ico-cb.png" alt="Carte bancaire" class="w-12 h-6" />
+                            <span class="text-sm text-[#383838]">Carte bancaire</span>
+                        </label>
+                        <label class="flex items-center gap-4 cursor-pointer border-b border-[#E2E2E2] pb-4">
+                            <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" />
+                            <img src="src/img/ico-applepay.png" alt="Apple Pay" class="w-12 h-6" />
+                            <span class="text-sm text-[#383838]">Apple Pay</span>
+                        </label>
+                        <label class="flex items-center gap-4 cursor-pointer border-b border-[#E2E2E2] pb-4">
+                            <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" />
+                            <img src="src/img/ico-paypal.png" alt="Paypal" class="w-12 h-6" />
+                            <span class="text-sm text-[#383838]">Paypal</span>
+                        </label>
+                        <label class="flex items-center gap-4 cursor-pointer border-b border-[#E2E2E2] pb-4">
+                            <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" />
+                            <img src="src/img/ico-alma.png" alt="Alma" class="w-12 h-6" />
+                            <span class="text-sm text-[#383838]">Alma</span>
+                        </label>
+                    </div>
+
+                    <!-- Bouton de réservation -->
+                    <button class="w-full h-[36px] mb-4 py-3 bg-[#BF2B6B] text-white text-sm font-bold rounded-lg flex items-center justify-center gap-2">
+                        Je réserve mon test psychotechnique
+                        <span class="text-xl">→</span>
+                    </button>
+                </div>     
+            </div>
+
+            <div id="right " class="mr-[90px]">
+                <div class="space-y-6 bg-white rounded-lg border border-[#EAEAEA] p-6">
+                    <!-- Titre -->
+                    <h1 class="text-lg font-bold text-[#BF2A6B]">Récapitulatif de votre test psychotechnique</h1>
+    
+                    <!-- Total à payer -->
+                    <div>
+                        <p class="text-sm text-[#383838]">Total à payer : <span class="text-xl font-bold text-[#383838]">130.00€</span></p>
+                        <p class="text-xs text-[#707070] mt-2">
+                            En passant votre commande, vous acceptez les conditions générales de vente de la société AAAEP. 
+                            Veuillez consulter notre politique de protection des données.
+                        </p>
+                    </div>
+                </div>
+                 <!-- Features -->
+                    <div class="flex justify-between items-center mt-6">
+                        <!-- Entraînement -->
+                        <div class="flex flex-col items-center">
+                            <img src="src/img/ico-hand-green.png" alt="Entraînement Icon" class="w-12 h-13" />
+                            <span class="text-sm font-bold text-[#383838] mt-2">Entraînement</span>
+                            <span class="text-xs text-[#707070]">Gratuit Illimité</span>
+                        </div>
+                        <!-- Résultats -->
+                        <div class="flex flex-col items-center">
+                            <img src="src/img/ico-list.png" alt="Résultats Icon" class="w-12 h-12" />
+                            <span class="text-sm font-bold text-[#383838] mt-2">Résultats</span>
+                            <span class="text-xs text-[#707070]">le Jour Même</span>
+                        </div>
+                        <!-- Annulation -->
+                        <div class="flex flex-col items-center">
+                            <img src="src/img/ico-check-green.png" alt="Annulation Icon" class="w-12 h-12" />
+                            <span class="text-sm font-bold text-[#383838] mt-2">Annulation</span>
+                            <span class="text-xs text-[#707070]">Gratuite jusqu'à 48h</span>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
