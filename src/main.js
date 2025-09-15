@@ -1,6 +1,6 @@
 import "/style.css";
 
-document.querySelector("#app").innerHTML = `
+const reservation = `
 <div class="h-full w-full relative">
     <div class="w-full h-[150px] grid grid-rows-[50%_50%] relative bg-[#fff]">
         <div class="w-[183px] h-[34px] mt-[24px] ml-[90px]">
@@ -131,12 +131,49 @@ document.querySelector("#app").innerHTML = `
                 <p class='text-white'>Total</p>
                 <span class='text-white text-[30px] font-bold ml-4'>135€</span>
             </div>    
-            <button class="self-start bg-[#BF2A6B] w-[173px] h-[39px] text-white rounded-lg  flex items-center justify-center gap-2">
+            <a href='rakotovaomilijaona-paiement' class="self-start bg-[#BF2A6B] w-[173px] h-[39px] text-white rounded-lg  flex items-center justify-center gap-2">
                 Suivant
                 <span class="text-xl">→</span>
-            </button>
+            </a>
         </div>
     </div>
   </div>  
 </div>
 `;
+
+const paiement = `
+    <div class="h-full w-full relative">
+        <div class="w-full h-[150px] grid grid-rows-[50%_50%] relative bg-[#fff]">
+            <div class="w-[183px] h-[34px] mt-[24px] ml-[90px]">
+                <img src="src/img/logo-test.png"/>
+            </div>
+        
+            <div class="grid grid-cols-[50%_50%] items-center shadow-[0px_3px_14px_#00000029]">
+                <h1 class="ml-[90px] font-bold text-[20px] font-[Lato] text-[#36578A]">Test psychotechnique pour permis de conduire à Montgeron</h1>
+            </div>
+        </div>
+    </div>
+`;
+const app = document.querySelector("#app");
+const loadPage = (page) => {
+    app.innerHTML = page;
+};
+
+// Vérifier la route actuelle
+const currentPath = window.location.pathname;
+
+// Rediriger vers la route par défaut si aucune route n'est spécifiée
+if (currentPath === "/") {
+    window.history.replaceState(
+        {},
+        "",
+        "/rakotovaomilijaona-completez-votre-reservation"
+    );
+    loadPage(reservation);
+}
+
+if (currentPath === "/rakotovaomilijaona-completez-votre-reservation") {
+    loadPage(reservation);
+} else {
+    loadPage(paiement);
+}
