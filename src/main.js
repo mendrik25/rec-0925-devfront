@@ -28,7 +28,8 @@ const reservation = `
                         <p class="text-[28px] font-bold text-[#2C2C2C]">+ 0€</p>
                         <p class="text-[10px] text-[#fff]">test</p>
                         <button class="mt-4 px-6 py-2 bg-gray-100 text-gray-700 font-semibold rounded-[8px] shadow">
-                        Sélectionner
+                            <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" />
+                            Sélectionner
                         </button>
                     </div>
 
@@ -60,6 +61,7 @@ const reservation = `
                         <p class="text-[28px] font-bold text-[#2C2C2C]">+ 40€</p>
                         <p class="text-[10px] text-[#2C2C2C]">A peine le prix d'un resto</p>
                         <button class="mt-4 px-6 py-2 bg-[#0DBC0D] text-[#2C2C2C] font-semibold rounded-[8px] shadow text-white">
+                         <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" appearance-none/>
                         Sélectionner
                         </button>
                     </div>
@@ -92,6 +94,7 @@ const reservation = `
                         <p class="text-[28px] font-bold text-[#2C2C2C]">+ 60€</p>
                         <p class="text-[10px] text-[#2C2C2C]">A peine le prix de 4 pizzas</p>
                         <button class="mt-4 px-6 py-2 bg-[#36578A]  text-white font-semibold rounded-[8px] shadow">
+                          <input type="radio" name="payment" class="w-3 h-3 text-[#BF2A6B] focus:ring-[#BF2A6B]" appearance-none/>
                         Sélectionner
                         </button>
                     </div>
