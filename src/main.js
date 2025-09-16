@@ -14,9 +14,9 @@ const reservation = `
 
     <div class="w-full h-full mt-[53px]">
         <h1 class="ml-[90px] font-bold text-[18px] font-[Lato] text-[#383838]">Complétez votre réservation</h1>    
-        <div class="flex ml-[90px] gap-[80px]">
-            <div class="w-[440px]">
-                <div class=" w-full rounded-2xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-white mt-[36px]">
+        <div class="flex w-screen gap-8 pl-[90px] pr-[90px]">
+            <div class="flex-1">
+                <div class=" w-full rounded-4xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-white mt-[36px]">
                     <!-- Header -->
                     <div class="text-center px-6 py-4 bg-[#F2F3F5] shadow-[0px_3px_6px_#00000029]">
                         <h3 class="text-lg font-bold text-[#2C2C2C]">Basic</h3>
@@ -48,8 +48,8 @@ const reservation = `
             </div>
 
              
-            <div class="w-[440px]">
-                <div class=" w-full rounded-2xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-[#0DBC0D] mt-[36px]">
+            <div class="flex-1">
+                <div class=" w-full rounded-4xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-[#0DBC0D] mt-[36px]">
                     <!-- Header -->
                     <div class="text-center px-6 py-4 bg-[#0DBC0D] shadow-[0px_3px_6px_#00000029]">
                         <h3 class="text-lg font-bold text-[#fff]">Assurance</h3>
@@ -67,7 +67,7 @@ const reservation = `
                     </div>
 
                     <!-- Features -->
-                    <div class="px-6 py-4 border-t space-y-3 text-sm text-[#7070702B] bg-white ml-[2px] mr-[2px] mb-[2px] rounded-b-2xl">
+                    <div class="px-6 py-4 border-t space-y-3 text-sm text-[#7070702B] bg-white ml-[2px] mr-[2px] mb-[2px] rounded-b-4xl">
                         <div class="flex items-center gap-2">
                             <img src="src/img/ico-hand.png" alt="Checked" class="w-6 h-6"/>
                             <span class="text-[#2C2C2C]">Entraînement illimité et gratuit</span>
@@ -81,8 +81,8 @@ const reservation = `
            
             </div>
 
-            <div class="w-[440px]">
-                <div class=" w-full rounded-2xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-white mt-[36px]">
+            <div class="flex-1">
+                <div class=" w-full rounded-4xl shadow-[0px_3px_6px_#00000029] overflow-hidden bg-white mt-[36px]">
                     <!-- Header -->
                     <div class="text-center px-6 py-4 bg-[#36578A] shadow-[0px_3px_6px_#00000029]">
                         <h3 class="text-lg font-bold text-[#fff]">Complet</h3>
